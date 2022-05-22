@@ -1,0 +1,33 @@
+/home/carlos/ CE_ALL/
+dat mai-3
+
+
+initclass programs
+#type name ver status
+
+src ce_base 1.0 NULL
+src ce_system 2.0 NULL
+
+sys ce_install 2.0 installed
+sys ce_uninstall 2.0 installed
+
+sys ce_system 2.0 installed
+
+
+stopclass programs
+
+
+
+
+
+
+initclass download_info
+src = https://raw.githubusercontent.com/CarlosEspadinha/CE_System2/__src__/ CE_SRC .h .cpp -ce_exec
+sys = https://raw.githubusercontent.com/CarlosEspadinha/CE_System2/__sys__/ CE_SYS .cpp -ce_exec
+app = https://github.com/CarlosEspadinha/CE_System2/archive/refs/heads/ CE_APP .zip -unzip -ce_exec
+
+#Exceptions:
+app Simul4 = https://github.com/CarlosEspadinha/PUBLIC/archive/refs/heads/Simul4.zip
+stopclass download_info
+
+
